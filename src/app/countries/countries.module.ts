@@ -9,8 +9,6 @@ import { SearchBoxComponent } from '../shared/components/search-box/search-box.c
 import { SharedModule } from '../shared/shared.module';
 import { CountyTableComponent } from './components/county-table/county-table.component';
 
-
-
 @NgModule({
   declarations: [
     ByCapitalPageComponent,
