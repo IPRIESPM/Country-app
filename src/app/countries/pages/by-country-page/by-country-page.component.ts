@@ -13,8 +13,7 @@ export class ByCountryPageComponent {
   constructor(private countriesService: CountryService) { }
 
   searchByCountry(term: string): void {
-    term = "name/" + term;
-    this.countriesService.searchCapital(term).subscribe(countries => {
+    this.countriesService.searchCountry(term).subscribe(countries => {
       this.countries = countries;
     });
   }
