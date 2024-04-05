@@ -4,14 +4,16 @@ import { HomePageComponent } from './pages/home-page/home-page.component'
 import { AboutPageComponent } from './pages/about-page/about-page.component'
 import { SidebarComponent } from './components/sidebar/sidebar.component'
 import { RouterModule } from '@angular/router'
-import { ContactComponent } from './pages/contact-page/contact.component'
+import { ContactComponent } from './pages/contact-page/contact.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component'
 
 @NgModule({
   declarations: [
     HomePageComponent,
     AboutPageComponent,
     SidebarComponent,
-    ContactComponent
+    ContactComponent,
+    SearchBoxComponent
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,7 @@ import { ContactComponent } from './pages/contact-page/contact.component'
     HomePageComponent,
     AboutPageComponent,
     ContactComponent,
+    SearchBoxComponent,
     SidebarComponent
   ]
 })
