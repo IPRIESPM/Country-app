@@ -3,7 +3,7 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
-    "extends": "standard-with-typescript",
+    "extends": "xo",
     "overrides": [
         {
             "env": {
@@ -15,6 +15,15 @@ module.exports = {
             "parserOptions": {
                 "sourceType": "script"
             }
+        },
+        {
+            "extends": [
+                "xo-typescript"
+            ],
+            "files": [
+                "*.ts",
+                "*.tsx"
+            ]
         }
     ],
     "parserOptions": {
