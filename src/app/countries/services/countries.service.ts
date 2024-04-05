@@ -4,12 +4,12 @@ import { Observable } from 'rxjs';
 import { Country } from '../interfaces/country';
 
 @Injectable({ providedIn: 'root' })
-export class ServiceNameService {
-  private url: string = "https://restcountries.eu/v3.1/"
+export class CountryService {
+  private url: string = "https://restcountries.com/v3.1/"
   constructor(private http: HttpClient) { }
 
   searchCapital(term: string): Observable<Country[]> {
     term = "capital/san";
-    return this.http.get<Country[]>(`${this.url}capital/${term}`)
+    return this.http.get<Country[]>(`${this.url}/${term}`)
   }
 }
