@@ -4,6 +4,7 @@ import { ByCountryPageComponent } from './pages/by-country-page/by-country-page.
 import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.component'
 import { RouterModule, Routes } from '@angular/router'
 import { CountriesModule } from './countries.module'
+import { CountryPageComponent } from './pages/country-page/country-page.component'
 
 const routes: Routes = [
   {
@@ -18,10 +19,10 @@ const routes: Routes = [
     path: 'by-region',
     component: ByRegionPageComponent,
   },
-  // {
-  //   path: 'by/:id',
-  //   component: CountriesModule,
-  // },
+  {
+    path: 'by/:id',
+    component: CountryPageComponent,
+  },
   {
     path: '**',
     redirectTo: 'by-capital'
