@@ -29,4 +29,12 @@ export class CountryService {
         catchError(error => of([]))
       )
   }
+
+  searchCountryByAlphaCode(term: string): Observable<Country | null> {
+    return this.http.get<Country[]>(`${this.url}alpha/${term}`)
+      .pipe(
+        map((country: Country[]) => country.length > 0 ? country[0] : null),
+        catchError(error => of(null))
+      )
+  }
 }
