@@ -22,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'by-country'
+    redirectTo: 'by-capital'
   }
 ]
 
