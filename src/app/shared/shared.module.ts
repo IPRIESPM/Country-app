@@ -8,13 +8,14 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 @NgModule({
   declarations: [
     HomePageComponent,
-    AboutPageComponent
+    AboutPageComponent,
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    HomePageComponent
+    HomePageComponent,
+    AboutPageComponent
   ]
 })
 export class SharedModule { }
